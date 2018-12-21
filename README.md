@@ -35,10 +35,28 @@ $ bin/rspec
 $ bin/rspec spec/path/to/file.rb
 ```
 
+## With docker
+```
+# build image
+$ docker-compose build
+
+# start app
+$ docker-compose up # add '-d' option to run in background
+
+# shutdown
+$ docker-compose down
+
+# Create db
+$ docker-compose run web rails db:create
+$ docker-compose run web rails db:migrate
+
+# Run Specs
+$ docker-compose run web rspec
+```
+
+
 ## Assumptions / Explanations
 Still missing:
 - a good authentication for 3rd party API's
-- create a docker image to development
 - create a proper deployment to production
 - some specs to controllers/models
-- database from sqlite3 to pg
