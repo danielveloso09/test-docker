@@ -1,0 +1,13 @@
+<li class="list-group-item">
+  <p>User: <%= @report.user.email %></p>
+  <p>Report name: <%= @report.name %></p>
+  <p>Location: <%= @report.location %></p>
+  <p>Description: <%= @report.description %></p>
+  <p>Files:</p>
+  <% @report.files.each do |file| %>
+    <img src="<%= file %>" style='width: 200px'>
+  <% end %>
+</li>
+
+<%= link_to 'Edit', edit_report_path(@report), class: "btn btn-primary" %>
+<%= link_to 'Back', reports_path, class: "btn btn-primary" %>

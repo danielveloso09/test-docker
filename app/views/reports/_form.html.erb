@@ -1,0 +1,18 @@
+<li class="list-group-item">
+  <%= form_for @report, class: "form-group" do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, class:"form-control" %>
+
+    <%= f.label :location %>
+    <%= f.text_field :location, class:"form-control" %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description, class:"form-control" %>
+
+    <%= f.label :files %>
+    <%= f.file_field :files, multiple: true %>
+
+    <%= f.submit 'Send', class: "btn btn-primary" %>
+  <% end %>
+</li>
