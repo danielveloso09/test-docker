@@ -1,4 +1,4 @@
-$ ->
+$(document).on "turbolinks:load", ->
   $('#reports-datatable').dataTable
     processing: true
     serverSide: true
