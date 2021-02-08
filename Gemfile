@@ -42,7 +42,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'simple_token_authentication'
 
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 gem 'ajax-datatables-rails'
 gem 'jquery-datatables'
